@@ -1,0 +1,86 @@
+.container {
+  width: 100dvw;
+  height: 100dvh;
+  transform: translate(-50%, -40%);
+  border-radius: 0.85rem;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  top: 40%;
+  scroll-behavior: smooth;
+  left: 50%;
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.card {
+  min-width: 100%;
+  min-height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.65rem;
+
+  .content {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.65rem;
+    gap: 3rem;
+  }
+
+  .profile-img {
+    width: 200px;
+    height: 200px;
+    position: relative;
+
+    &::after {
+      content: "";
+      min-width: 100%;
+      min-height: 100%;
+      position: absolute;
+      border-radius: $radius;
+      background-color: rgba($primaryColor, 0.19);
+      left: 0;
+    }
+  }
+
+  .profile-img img {
+    width: 100%;
+    border-radius: $radius;
+    height: 100%;
+  }
+}
+
+.greeting {
+  text-align: center;
+  line-height: 2.7rem;
+
+  h2 {
+    color: $primaryColor;
+  }
+}
+
+.socials li {
+  display: flex;
+  flex-direction: row;
+  gap: 0.65rem;
+
+  a {
+    color: #ffffff;
+
+    &:hover {
+      color: $primaryColor;
+    }
+  }
+}
