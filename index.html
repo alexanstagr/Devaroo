@@ -126,11 +126,21 @@
             <h2>Let's Talk</h2>
             <h3>Have any project in your mind ?</h3>
           </div>
-
+          <!-- contact form -->
           <div class="form">
+            <div class="message" data-error="false">
+              Thanks for your message.
+            </div>
             <form>
               <label for="name">Name</label>
               <input type="text" id="name" />
+              <label for="subject">Subject</label>
+              <select id="subject">
+                <option value="plugins">Plugins Development</option>
+                <option value="web">Web Development</option>
+                <option value="mobile">Mobile Apps</option>
+                <option value="ux">UX Design</option>
+              </select>
               <label for="email">Your Email</label>
               <input type="email" id="email" />
               <label for="subject">Your Message</label>
@@ -142,6 +152,5 @@
         </div>
       </section>
     </main>
-  
   </body>
 </html>
