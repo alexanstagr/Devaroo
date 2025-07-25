@@ -1,15 +1,9 @@
 $breakpoint-md: 1024px; // desktop
 
 @media only screen and (min-width: $breakpoint-md) {
-  .container {
-    max-width: 800px;
-    max-height: calc(100dvh / 1);
-  }
-
   .content {
-    width: 70dvw;
+    width: 60dvw;
   }
-
   .form {
     max-width: 450px;
     max-height: 550px;
@@ -18,15 +12,6 @@ $breakpoint-md: 1024px; // desktop
   .projects {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (orientation: landscape) {
-  section {
-    .content {
-      padding-top: 6rem;
-      gap: 0.54rem;
-    }
   }
 }
 
