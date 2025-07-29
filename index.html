@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
+  <meta name="theme-color" content="#141a1e" />
   <meta name="viewport" content="width=device-width, user-scalable=no" />
   <link rel="stylesheet" href="./assets/css/master.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
@@ -12,16 +13,15 @@
 <body x-data="{menu: false }">
   <div class="hamburger" :data-state="menu" @click="menu = !menu"></div>
 
-
   <!-- menu area -->
   <div class="menu" x-show="menu">
     <div class="links">
-      <a href="#intro">Welcome</a>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#projects">Projects</a>
-      <a href="#news">News</a>
-      <a href="#contact">Contact</a>
+      <a @click="menu = false" href="#intro">Welcome</a>
+      <a @click="menu = false" href="#about">About Me</a>
+      <a @click="menu = false" href="#services">Services</a>
+      <a @click="menu = false" href="#projects">Projects</a>
+      <a @click="menu = false" href="#news">News</a>
+      <a @click="menu = false" href="#contact">Contact</a>
     </div>
 
     <div class="copy">&copy; 2025 <a href="#">alexansta.gr</a></div>
@@ -29,8 +29,6 @@
 
   <!-- card container -->
   <main id="main">
-
-
     <!-- welcome section -->
     <section id="intro">
       <div class="content">
@@ -39,9 +37,9 @@
         </div>
 
         <div class="greeting">
-          <span>Hi my name is</span>
-          <h1>Alexandros Anastasiadis</h1>
-          <h2>Front-end Developer</h2>
+          <h1>Hi, my name is</h1>
+          <h2>Alexandros Anastasiadis</h2>
+          <h3>Junior Front-end / React.js Developer</h3>
         </div>
 
         <!-- social icons -->
@@ -61,25 +59,28 @@
     <section id="about">
       <div class="content">
         <div class="sectionname">
-          <h2>About Me</h2>
+          <a href="404.html">
+            <h2>About Me</h2>
+          </a>
           <h3>A dream comes true</h3>
         </div>
         <div class="paragraphs">
           <p>
-            I was born in Cologne, Germany at 1990, and from a young age I had
-            a passion for computers. Started my studies as a computer
-            technician, and along the way, I discovered my passion for coding.
+            I was born in <a href="#">Cologne</a> at 1990, and from a young
+            age I had a passion for computers. Started my studies as a
+            computer technician, and along the way, I discovered my passion
+            for coding and technology.
           </p>
           <p>
-            These days, I love designing and developing webapps and themes
-            using TailwindCSS, React, Next.js, and PHP. I also enjoy creating
-            my own plugins and browser extensions it's exciting to bring ideas
-            to life with code.
+            I love designing and developing webapps and themes using Tailwind,
+            React.js, Next.js, and PHP. Also enjoying creating my own plugins
+            and browser extensions it's exciting to bring ideas to life with
+            code.
           </p>
 
           <p class="emphasis">
-            Some of my hobbies are: landscape & street photography, clay
-            sculpting, guitars, traveling and wood-working.
+            In free time i like to playing my guitar, fishing, traveling,
+            taking photos and craft things with wood and clay.
           </p>
         </div>
       </div>
@@ -90,46 +91,60 @@
       <div class="content">
         <div class="sectionname">
           <h2>Services</h2>
-          <h3>Some of my recent works</h3>
+          <h3>Let's bring your ideas to life</h3>
         </div>
 
-        <div class="cards-container">
-
-
-          <a href="#" class="card">
-            <div class="content">
-              <h2>01</h2>
-              <h3>Service Name</h3>
-              <p>Service excerpt summary</p>
+        <div class="services-container">
+          <div class="servcies-section-wrapper">
+            <div class="services-box">
+              <i class="fa-solid fa-code"></i>
+              <h3>Web Development</h3>
+              <p>
+                We build modern and responsive websites or Apps tailored to your
+                business needs.
+              </p>
             </div>
-          </a>
-
-
-
-          <a href="#" class="card">
-            <div class="content">
-              <h2>02</h2>
-              <h3>Service Name</h3>
-              <p>Service excerpt summary</p>
+            <div class="services-box">
+              <i class="fa-solid fa-mobile-alt"></i>
+              <h3>Web Design</h3>
+              <p>
+                Designing user-friendly interfaces that enhance user experience
+                and engagement.
+              </p>
             </div>
-          </a>
-
-
-          <a href="#" class="card">
-            <div class="content">
-              <h2>03</h2>
-              <h3>Service Name</h3>
-              <p>Service excerpt summary</p>
+            <div class="services-box">
+              <i class="fa-solid fa-palette"></i>
+              <h3>Theme Transform</h3>
+              <p>
+                Did you find a theme that you like? Let's convert it to Next.js or WordPress.
+              </p>
             </div>
-          </a>
-
-
+            <div class="services-box">
+              <i class="fa-solid fa-chart-line"></i>
+              <h3>Extensions & Plugins</h3>
+              <p>
+                Creating custom browser extensions to enhance your web
+                experience.
+              </p>
+            </div>
+            <div class="services-box">
+              <i class="fa-solid fa-shield-alt"></i>
+              <h3>Mobile Apps</h3>
+              <p>
+                Cross-platform mobile applications that run smoothly
+                on both iOS and Android devices.
+              </p>
+            </div>
+            <div class="services-box">
+              <i class="fa-solid fa-cloud"></i>
+              <h3>Mentoring</h3>
+              <p>
+                Offering guidance and support to aspiring developers in their
+                journey to becoming professionals.
+              </p>
+            </div>
+          </div>
         </div>
-
-      </div>
-
-
-
       </div>
     </section>
 
@@ -166,7 +181,6 @@
       </div>
     </section>
   </main>
-
 
   <div id="myProgress">
     <div id="myBar"></div>

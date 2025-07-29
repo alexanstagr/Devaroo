@@ -1,0 +1,55 @@
+.services-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px 0px;
+}
+
+.servcies-section-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.services-box {
+  background-color: rgb(4, 8, 20);
+  border: dashed 1px $primaryColor;
+  color: white;
+  width: 100%;
+  padding: 30px 20px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.services-box:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.services-box h3,
+.services-box p {
+  margin: 0px;
+  text-align: center;
+}
+
+.services-box i {
+  background-color: white;
+  color: #d2691e;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  margin-bottom: 16px;
+  font-size: 24px;
+}
