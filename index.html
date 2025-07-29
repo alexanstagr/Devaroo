@@ -12,6 +12,7 @@
 <body x-data="{menu: false }">
   <div class="hamburger" :data-state="menu" @click="menu = !menu"></div>
 
+
   <!-- menu area -->
   <div class="menu" x-show="menu">
     <div class="links">
@@ -27,7 +28,10 @@
   </div>
 
   <!-- card container -->
-  <main>
+  <main id="main">
+
+
+    <!-- welcome section -->
     <section id="intro">
       <div class="content">
         <div class="profile-img">
@@ -162,6 +166,11 @@
       </div>
     </section>
   </main>
+
+
+  <div id="myProgress">
+    <div id="myBar"></div>
+  </div>
 
   <!-- javaScript -->
   <script src="./assets/js/theme.js"></script>

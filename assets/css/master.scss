@@ -2,13 +2,14 @@
 @import "./base";
 @import "./icons";
 @import "./parts/menu";
+@import "./parts/cards";
 @import "./responsive";
 
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
-
 body {
   font-family: "Cairo", sans-serif;
   background-color: rgb(4, 14, 20);
@@ -48,8 +49,9 @@ a:hover {
 
 .emphasis {
   color: $primaryColor;
+  filter: contrast(53%);
   font-style: oblique;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 // contact form
@@ -64,7 +66,6 @@ a:hover {
   color: #111111;
   flex-direction: column;
   padding: 0.55rem;
-
 
   // error message
   .message {
@@ -125,4 +126,20 @@ a:hover {
     color: $primaryColor;
     font-size: 1.2rem;
   }
+}
+
+// scroll indicator
+#myProgress {
+  width: 100%;
+  background-color: #f3f3f300;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 5px;
+}
+
+#myBar {
+  width: 0%;
+  height: 5px;
+  background-color: $primaryColor;
 }
