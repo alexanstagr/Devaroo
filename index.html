@@ -1,156 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, user-scalable=no" />
-    <link rel="stylesheet" href="./assets/css/master.css" />
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
-    ></script>
-    <title>Devaroo - OnePage Theme</title>
-  </head>
-  <body x-data="{menu: false }">
-    <div class="hamburger" :data-state="menu" @click="menu = !menu"></div>
 
-    <div class="scroll-indicator" id="scrollIndicator"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+  <link rel="stylesheet" href="./assets/css/master.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <title>Devaroo - OnePage Theme</title>
+</head>
 
-    <!-- menu area -->
-    <div class="menu" x-show="menu">
-      <div class="links">
-        <a href="#intro">INTRO</a>
-        <a href="#about">ABOUT</a>
-        <a href="#projects">PROJECTS</a>
-        <a href="#news">NEWS</a>
-        <a href="#contact">CONTACT</a>
-      </div>
+<body x-data="{menu: false }">
+  <div class="hamburger" :data-state="menu" @click="menu = !menu"></div>
 
-      <div class="copy">&copy; 2025 <a href="#">alexansta.gr</a></div>
+  <!-- menu area -->
+  <div class="menu" x-show="menu">
+    <div class="links">
+      <a href="#intro">Welcome</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
     </div>
 
-    <!-- card container -->
-    <main>
-      <section id="intro">
-        <div class="content">
-          <div class="profile-img">
-            <img
-              src="https://avatars.githubusercontent.com/u/221191835?v=4"
-              alt="Profile image"
-            />
-          </div>
+    <div class="copy">&copy; 2025 <a href="#">alexansta.gr</a></div>
+  </div>
 
-          <div class="greeting">
-            <span>Hi my name is</span>
-            <h1>Alexandros Anastasiadis</h1>
-            <h2>Front-end Developer</h2>
-          </div>
-
-          <!-- social icons -->
-
-          <ul class="socials">
-            <li>
-              <a href="https://linkedin.com/in/alexanstagr"
-                ><i class="linkedin"></i
-              ></a>
-              <a href="https://github.com/alexanstagr"
-                ><i class="github"></i
-              ></a>
-              <a href="#"><i class="instagram"></i></a>
-              <a href="#"><i class="discord"></i></a>
-            </li>
-          </ul>
+  <!-- card container -->
+  <main>
+    <section id="intro">
+      <div class="content">
+        <div class="profile-img">
+          <img src="https://avatars.githubusercontent.com/u/221191835?v=4" alt="Profile image" />
         </div>
-      </section>
 
-      <!-- about section-->
-      <section id="about">
-        <div class="content">
-          <div class="sectionname">
-            <h2>About Me</h2>
-            <h3>Have any project in your mind ?</h3>
-          </div>
-          <div class="paragraphs">
-            <p>
-              I was born in Cologne, Germany at 1990, and from a young age I had
-              a passion for computers. My first computer was a Compaq Presario
-              5441 with an AMD K6-2 processor running at 500 MHz and just 64MB
-              of memory. It was a gift from my father, who introduced me to the
-              world of computing.
-            </p>
-            <p>
-              After studying computer technician courses and taking programming
-              classes in high school and technical school, I realized that the
-              internet was my true calling. That’s how my passion for frontend
-              development and programming began. Today, I enjoy designing and
-              building websites and apps using React, Next.js, and PHP. I also
-              create my own plugins and extensions.
-            </p>
-
-            <p class="emphasis">
-              In my free time, I enjoy fishing, playing the guitar, going on day
-              trips, and working with clay sculpting. I’ve also recently started
-              learning Italian, about two months ago.
-            </p>
-          </div>
+        <div class="greeting">
+          <span>Hi my name is</span>
+          <h1>Alexandros Anastasiadis</h1>
+          <h2>Front-end Developer</h2>
         </div>
-      </section>
 
-      <!-- projects section -->
-      <section id="projects">
-        <div class="content">
-          <div class="sectionname">
-            <h2>Projects</h2>
-            <h3>Here is some of my recent work</h3>
-          </div>
+        <!-- social icons -->
 
-          <div class="projects">
-            <div class="card">
-              <div class="details">
-                <div class="name">NerdOS</div>
-                <div class="desc">Mini OS with React.js and TypeScript.</div>
-                <div class="stack">
-                  <span>React.js</span>
-                  <span>TypeScript</span>
-                  <span>Firefox</span>
-                </div>
-              </div>
+        <ul class="socials">
+          <li>
+            <a href="https://linkedin.com/in/alexanstagr"><i class="linkedin"></i></a>
+            <a href="https://github.com/alexanstagr"><i class="github"></i></a>
+            <a href="#"><i class="instagram"></i></a>
+            <a href="#"><i class="discord"></i></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- about section-->
+    <section id="about">
+      <div class="content">
+        <div class="sectionname">
+          <h2>About Me</h2>
+          <h3>A dream comes true</h3>
+        </div>
+        <div class="paragraphs">
+          <p>
+            I was born in Cologne, Germany at 1990, and from a young age I had
+            a passion for computers. Started my studies as a computer
+            technician, and along the way, I discovered my passion for coding.
+          </p>
+          <p>
+            These days, I love designing and developing webapps and themes
+            using TailwindCSS, React, Next.js, and PHP. I also enjoy creating
+            my own plugins and browser extensions it's exciting to bring ideas
+            to life with code.
+          </p>
+
+          <p class="emphasis">
+            Some of my hobbies are: landscape & street photography, clay
+            sculpting, guitars, traveling and wood-working.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- services section -->
+    <section id="services">
+      <div class="content">
+        <div class="sectionname">
+          <h2>Services</h2>
+          <h3>Some of my recent works</h3>
+        </div>
+
+        <div class="cards-container">
+
+
+          <a href="#" class="card">
+            <div class="content">
+              <h2>01</h2>
+              <h3>Service Name</h3>
+              <p>Service excerpt summary</p>
             </div>
-          </div>
-        </div>
-      </section>
+          </a>
 
-      <!-- contact section -->
-      <section id="contact">
-        <div class="content">
-          <div class="sectionname">
-            <h2>Let's Talk</h2>
-            <h3>Have any project in your mind ?</h3>
-          </div>
-          <!-- contact form -->
-          <div class="form">
-            <div class="message" data-error="false">
-              Thanks for your message.
+
+
+          <a href="#" class="card">
+            <div class="content">
+              <h2>02</h2>
+              <h3>Service Name</h3>
+              <p>Service excerpt summary</p>
             </div>
-            <form>
-              <label for="name">Name</label>
-              <input type="text" id="name" />
-              <label for="subject">Subject</label>
-              <select id="subject">
-                <option value="plugins">Plugins Development</option>
-                <option value="web">Web Development</option>
-                <option value="mobile">Mobile Apps</option>
-                <option value="ux">UX Design</option>
-              </select>
-              <label for="email">Your Email</label>
-              <input type="email" id="email" />
-              <label for="subject">Your Message</label>
-              <textarea id="subject"></textarea>
+          </a>
 
-              <button type="submit">Send Message</button>
-            </form>
-          </div>
+
+          <a href="#" class="card">
+            <div class="content">
+              <h2>03</h2>
+              <h3>Service Name</h3>
+              <p>Service excerpt summary</p>
+            </div>
+          </a>
+
+
         </div>
-      </section>
-    </main>
-  </body>
+
+      </div>
+
+
+
+      </div>
+    </section>
+
+    <!-- contact section -->
+    <section id="contact">
+      <div class="content">
+        <div class="sectionname">
+          <h2>Let's Talk</h2>
+          <h3>Have any project in your mind ?</h3>
+        </div>
+        <!-- contact form -->
+        <div class="form">
+          <div class="message" data-error="false">
+            Thanks for your message.
+          </div>
+          <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" />
+            <label for="subject">Subject</label>
+            <select id="subject">
+              <option value="plugins">Plugins Development</option>
+              <option value="web">Web Development</option>
+              <option value="mobile">Mobile Apps</option>
+              <option value="ux">UX Design</option>
+            </select>
+            <label for="email">Your Email</label>
+            <input type="email" id="email" />
+            <label for="subject">Your Message</label>
+            <textarea id="subject"></textarea>
+
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- javaScript -->
+  <script src="./assets/js/theme.js"></script>
+</body>
+
 </html>
