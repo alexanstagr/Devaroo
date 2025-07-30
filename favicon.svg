@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="24.278833mm"
+   height="24.278849mm"
+   viewBox="0 0 24.278833 24.278849"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1"
+     transform="translate(-27.272114,-424.04816)">
+    <rect
+       style="opacity:0.926;fill:#00c8cf;fill-opacity:1;stroke:none;stroke-width:0.135067"
+       id="rect1"
+       width="24.278835"
+       height="24.278835"
+       x="27.272114"
+       y="424.04816"
+       ry="4.4143338" />
+    <text
+       xml:space="preserve"
+       style="font-weight:500;font-size:21.8824px;font-family:'LT Wave';-inkscape-font-specification:'LT Wave Medium';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;opacity:0.926;fill:#f9f9f9;fill-opacity:1;stroke:none;stroke-width:0.303924"
+       x="30.45067"
+       y="443.84644"
+       id="text1"><tspan
+         id="tspan1"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:'LT Wave UI';-inkscape-font-specification:'LT Wave UI Medium';fill:#f9f9f9;stroke-width:0.303924"
+         x="30.45067"
+         y="443.84644">a</tspan></text>
+  </g>
+</svg>
